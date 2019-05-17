@@ -1,0 +1,5 @@
+/home/demo/Springboot-kube/src/main/java/com/sa/web/SentimentController.java
+/home/demo/Springboot-kube/src/main/java/com/sa/web/dto/SentimentDto.java
+/home/demo/Springboot-kube/src/main/java/com/sa/web/SentimentAnalysisWebApp.java
+/home/demo/Springboot-kube/src/main/java/com/sa/web/dto/SentenceDto.java
+/home/demo/Springboot-kube/src/main/java/com/sa/web/dto/MachineDetails.java
