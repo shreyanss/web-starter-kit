@@ -3,9 +3,16 @@ phases:
   install:
     runtime-versions:
       docker: 18
+    commands:
+      - echo [PHASE] Entered the install phase...
+      - # 1. We install aws-cli (Alpine Linux)
+      - apk --no-cache update
+      - apk --no-cache add python py-pip py-setuptools ca-certificates curl groff less
+      - pip --no-cache-dir install awscli
   pre_build:
     commands:
     - echo Logging in to Amazon ECR...
+    - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
   build:
     commands:
     - echo Build started on `date`
