@@ -7,7 +7,6 @@ phases:
       - echo [PHASE] Entered the install phase...
       - # 1. We install aws-cli (Alpine Linux)
       - apt update
-      - apt add python py-pip py-setuptools ca-certificates curl groff less
       - pip install awscli
   pre_build:
     commands:
