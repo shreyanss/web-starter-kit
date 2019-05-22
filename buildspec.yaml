@@ -17,7 +17,7 @@ phases:
     - echo Build started on `date`
     - echo Building the Docker image...
     - CUSTOM_TAG=$(date +%s)
-    - docker build -t $CUSTOM_TAG  -f shreyanss/web-starter-kit/Springboot-kube/Dockerfile .
+    - docker build -t $CUSTOM_TAG  -f web-starter-kit/Springboot-kube/Dockerfile .
   post_build:
     commands:
     - echo Build completed on `date`
