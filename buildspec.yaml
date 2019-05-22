@@ -16,7 +16,7 @@ phases:
     commands:
     - echo Build started on `date`
     - echo Building the Docker image...
-    - CUSTOM_TAG=$(date)
+    - CUSTOM_TAG=$(date +%s)
     - docker build -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$CUSTOM_TAG  -f shreyanss/web-starter-kit/Springboot-kube .
   post_build:
     commands:
