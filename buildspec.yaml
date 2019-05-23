@@ -16,7 +16,7 @@ phases:
     commands:
     - echo Build started on `date`
     - echo Building the Docker image...
-    - CUSTOM_TAG=angular_$(date +%s)
+    - CUSTOM_TAG=angular_$(date)
     - docker build . -t $IMAGE_REPO_NAME:$CUSTOM_TAG
     - docker tag $IMAGE_REPO_NAME:$CUSTOM_TAG $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$CUSTOM_TAG
   post_build:
