@@ -1,0 +1,23 @@
+l<p>
+   <!--host-info works! -->
+</p>
+<div>
+  <table *ngIf="hostdata">
+    <!-- ADD HEADERS -->
+    <tr>
+        <th>HostName</th>
+            <th>HostIP</th>
+                <th>ServicetType</th>
+                <th>ApplicationName</th>
+    </tr>
+
+    <!-- BIND ARRAY TO TABLE -->
+    <tr *ngFor="let p of hostdata">
+        <td>{{p.hostName}}</td>
+            <td>{{p.hostIP}}</td>
+                <td>{{p.serviceType}}</td>
+                <td>{{p.applicationName}}</td>
+    </tr>
+</table>
+
+</div>
