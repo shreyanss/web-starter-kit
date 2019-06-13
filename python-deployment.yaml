@@ -13,7 +13,7 @@ spec:
         app: python
     spec:
       containers:
-      - name: python
+        name: python
         image: 
         ports:
         - containerPort: 5000
