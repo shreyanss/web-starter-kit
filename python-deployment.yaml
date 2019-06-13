@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         name: python
-        image: 715146130151.dkr.ecr.us-east-1.amazonaws.com/microservices:python
+        image: 
         ports:
         - containerPort: 5000
 
