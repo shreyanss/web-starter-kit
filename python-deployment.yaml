@@ -13,7 +13,7 @@ spec:
         app: python
     spec:
       containers:
-      - name: python
+        name: python
         image: 715146130151.dkr.ecr.us-east-1.amazonaws.com/microservices:python
         ports:
         - containerPort: 5000
