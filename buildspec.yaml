@@ -5,7 +5,7 @@ phases:
       docker: 18
     commands:
       - echo [PHASE] Entered the install phase...
-      - # 1. We install aws-cli (Alpine Linux)
+      - # 1. We install aws-cli (Alpine Linux  )
       - apt update
       - pip install awscli
   pre_build:
