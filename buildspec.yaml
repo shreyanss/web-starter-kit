@@ -24,4 +24,4 @@ phases:
     - echo Build completed on `date`
     - echo Pushing the Docker image...
     - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$CUSTOM_TAG
-    - sed -i "s/BUILD_ID/$(CUSTOM_TAG)/g" python-deployment.yaml
+    - sed -i "s/BUILD_ID/$CUSTOM_TAG/g" python-deployment.yaml
